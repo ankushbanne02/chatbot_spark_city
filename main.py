@@ -90,7 +90,8 @@ async def chat(req: ChatRequest):
             HumanMessage(content=req.message)
         ]
 
-        response = llm(messages)
+        
+        response = llm.invoke(messages)
 
         return {
             "response": response.content
