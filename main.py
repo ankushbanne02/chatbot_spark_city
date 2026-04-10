@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 from langchain_openai import AzureChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 
 from dotenv import load_dotenv
 
