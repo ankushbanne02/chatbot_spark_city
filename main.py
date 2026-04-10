@@ -3,7 +3,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
-from langchain.chat_models import AzureChatOpenAI
+
+from langchain_openai import AzureChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
 
 from dotenv import load_dotenv
